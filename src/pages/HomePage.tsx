@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, ArrowRight, DownloadIcon, ViewIcon, EyeIcon } from 'lucide-react';
 import { loadSlim } from "tsparticles-slim";
 import type { Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
@@ -89,7 +89,7 @@ const HomePage: React.FC = () => {
             Hi, I'm <span className="bg-gradient-to-r from-violet-300 to-indigo-300 text-transparent bg-clip-text">LOKESHWARAN P</span>
           </h1>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl">
-            A second-year Computer Science student passionate about backend development,
+            A third-year Computer Science student passionate about backend development,
             embedded systems, and creating efficient software solutions.
           </p>
           <div className="flex flex-col gap-8">
@@ -103,6 +103,11 @@ const HomePage: React.FC = () => {
                  className="flex items-center gap-2 px-6 py-3 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition-colors">
                 <Linkedin size={20} />
                 LinkedIn
+              </a>
+              <a href="https://www.linkedin.com/in/lokeshwaran-prithivirajan-25a22128b" 
+                 className="flex items-center gap-2 px-6 py-3 bg-yellow-700 text-white rounded-lg hover:bg-violet-700 transition-colors">
+                <EyeIcon size={20} />
+                Resume (PDF)
               </a>
             </div>
             <Link 

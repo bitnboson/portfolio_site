@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="/blog" className="text-gray-300 hover:text-white transition-colors">
-                  Blog
+                  Resume
                 </a>
               </li>
             </ul>

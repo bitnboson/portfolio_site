@@ -34,10 +34,10 @@ const Navigation: React.FC = () => {
               <Boxes size={20} />
               <span>Projects</span>
             </Link>
-            <Link to="/blog" className={getNavItemClass('/blog')}>
+            {/* <Link to="/blog" className={getNavItemClass('/blog')}>
               <BookOpen size={20} />
               <span>Blog</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
