@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, ArrowRight, DownloadIcon, ViewIcon, EyeIcon } from 'lucide-react';
+import { Github, Linkedin, ArrowRight, DownloadIcon, ViewIcon, EyeIcon, GitBranchPlus, GitGraphIcon, GithubIcon } from 'lucide-react';
 import { loadSlim } from "tsparticles-slim";
 import type { Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
@@ -96,7 +96,7 @@ const HomePage: React.FC = () => {
             <div className="flex gap-4">
               <a href="https://github.com/Lokesh-Spectre" 
                  className="flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-lg border border-white/20 hover:bg-white/20 transition-colors">
-                <Github size={20} />
+                <GithubIcon size={20} />
                 GitHub
               </a>
               <a href="https://www.linkedin.com/in/lokeshwaran-prithivirajan-25a22128b" 
@@ -104,7 +104,7 @@ const HomePage: React.FC = () => {
                 <Linkedin size={20} />
                 LinkedIn
               </a>
-              <a href="https://www.linkedin.com/in/lokeshwaran-prithivirajan-25a22128b" 
+              <a href="/resume.pdf" target='_blank'
                  className="flex items-center gap-2 px-6 py-3 bg-yellow-700 text-white rounded-lg hover:bg-violet-700 transition-colors">
                 <EyeIcon size={20} />
                 Resume (PDF)

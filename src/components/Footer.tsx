@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/blog" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/resume.pdf" target='_blank' className="text-gray-300 hover:text-white transition-colors">
                   Resume
                 </a>
               </li>
