@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-neutral-200 font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent-soft text-ink-950;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-ink-950;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-600 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-500;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-5xl px-6 sm:px-8;
+  }
+
+  .card-surface {
+    @apply bg-ink-900 border border-ink-700/60 rounded-2xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-medium text-white transition-all duration-200 hover:bg-accent-deep hover:shadow-lg hover:shadow-accent/20 active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-lg border border-ink-600 px-6 py-3 font-medium text-neutral-200 transition-all duration-200 hover:border-neutral-400 hover:text-white active:scale-95;
+  }
+
+  .btn-icon {
+    @apply inline-flex items-center justify-center rounded-lg border border-ink-600 p-2.5 text-neutral-400 transition-all duration-200 hover:border-accent hover:text-accent-soft;
+  }
+
+  .section-label {
+    @apply font-mono text-sm tracking-widest text-accent-soft uppercase;
+  }
+
+  .input-field {
+    @apply w-full rounded-lg border border-ink-600 bg-ink-900 px-4 py-3 text-neutral-200 placeholder:text-neutral-500 transition-colors duration-200 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-white via-neutral-200 to-neutral-500 bg-clip-text text-transparent;
+  }
+}
+
+/* Code blocks inside prose (react-markdown + rehype-highlight emit .hljs) */
+.prose pre code.hljs {
+  background: transparent;
+  padding: 0;
+}
+
+.prose pre:has(code.hljs) {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
